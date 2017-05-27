@@ -13,36 +13,37 @@ class Automatic_Bid(unittest.TestCase):
 
     def setUp(self):
         reload(sys)
-        sys.setdefaultencoding(u'utf8')
+        sys.setdefaultencoding('utf8')
         options = webdriver.ChromeOptions()
-        options.add_experimental_option(u'excludeSwitches', [u'ignore-certificate-errors'])
+        options.add_experimental_option('excludeSwitches', ['ignore-certificate-errors'])
         global browser
         browser = webdriver.Chrome(chrome_options=options)
-        # browser.maximize_window()
         browser.implicitly_wait(50.0)
         global isPhoneAuth
-        isPhoneAuth = u''
+        isPhoneAuth = ''
         global isRealName
-        isRealName = u''
+        isRealName = ''
+        global isAutoStateOpen
+        isAutoStateOpen = ''
 
     def autoBidTest(self):
-        print(u'---->: 开始自动投标自动化测试')
-        if self.logInCNAiDai() == u'success':
+        print('---->: 开始自动投标自动化测试')
+        if self.logInCNAiDai() == 'success':
             if self.check_user_info_authentication_state():
                 autoState = self.checkAutoState()
                 time.sleep(2)
                 browser.find_element_by_id('openAutoTender').click()
                 time.sleep(1)
-                if autoState == u'open':
+                if autoState == 'open':
                     self.close_Automatic_Bid()
                     self.open_Automatic_Bid()
                     self.modify_Automatic_Bid()
-                elif autoState == u'close':
+                elif autoState == 'close':
                     self.open_Automatic_Bid()
                     self.modify_Automatic_Bid()
                     self.close_Automatic_Bid()
-                elif autoState == u'unknown':
-                    print(u'---->: 无法获取用户是否开启自动投标')
+                elif autoState == 'unknown':
+                    print('---->: 无法获取用户是否开启自动投标')
 
     def logInCNAiDai(s):
         browser.get(u'http://www.cnaidai.com/webpc/index.html')
@@ -129,25 +130,23 @@ class Automatic_Bid(unittest.TestCase):
         print('---->: 开始开启自动投标\n---->: 点击switch开关(open)')
         browser.refresh()
         time.sleep(2)
-        # browser.find_element_by_id('openAutoTender').click()
-        time.sleep(1)
         browser.find_element_by_class_name('close1').click()
         time.sleep(1)
         browser.find_element_by_id('payPassWord').send_keys('111111')
         time.sleep(1)
         browser.find_element_by_xpath('/html/body/div[6]/div[2]/a[2]').click()
         time.sleep(2)
-        print(u'开启-自动投标-已结束')
+        print('开启-自动投标-已结束')
 
     def modify_Automatic_Bid(self):
         browser.refresh()
         time.sleep(1)
-        browser.find_element_by_class_name(u'revise-btn').click()
-        print(u'---->: 进入修改页面')
+        browser.find_element_by_class_name('revise-btn').click()
+        print('---->: 进入修改页面')
         time.sleep(2)
-        print(u'---->: 选取年化率')
-        selMin = browser.find_element_by_id(u'minimumProfit')
-        selMax = browser.find_element_by_id(u'maximumProfit')
+        print('---->: 选取年化率')
+        selMin = browser.find_element_by_id('minimumProfit')
+        selMax = browser.find_element_by_id('maximumProfit')
         numMin = random.randint(1, 24)
         numMax = random.randint(1, 24)
         while (numMin > numMax) :
@@ -160,12 +159,12 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(1)
         for i in range(0, 5):
             dateIndex = random.randint(1, 5)
-            print u'dateIndex: ', dateIndex
-            one_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(1)')
-            three_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(2)')
-            six_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(3)')
-            twelve_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(4)')
-            eighteen_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(5)')
+            print 'dateIndex: ', dateIndex
+            one_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(1)')
+            three_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(2)')
+            six_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(3)')
+            twelve_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(4)')
+            eighteen_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(5)')
 
             if dateIndex == 1:
                 one_month.click()
@@ -189,19 +188,16 @@ class Automatic_Bid(unittest.TestCase):
                 time.sleep(1)
                 twelve_month.click()
                 time.sleep(1)
-        print '#########################################################################'
+        # print('#########################################################################')
         total = 10000
         li = [i for i in range(total)]
-        res = []
-        for i in range(2):
-            t = random.randint(i, total - 1)
-            res.append(li[t])
-        print res, res[0], res[1]
-        print '###########################################################################'
+        res = random.sample(li, 2)
+        # print('###########################################################################')
+
+        if (res[0] > res[1]):
+            res[0], res[1] = res[1], res[0]
         minAmount = res[0]
         maxAmount = res[1]
-        if minAmount > maxAmount:
-            maxAmount, minAmount = minAmount, maxAmount
         print('---->: 最小金额是: ', minAmount, '    最大金额是: ', maxAmount)
         time.sleep(3)
         minAmount = browser.find_element_by_id('minimumAmount')
@@ -240,7 +236,7 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_class_name('btn-ensure').click()
         time.sleep(1)
-        print('修改-自动投标-结束')
+        print('---->: 修改-自动投标-结束')
 
     def close_Automatic_Bid(self):
         print(u'---->: 开始关闭自动投标\n---->: 点击switch按钮(close)')
