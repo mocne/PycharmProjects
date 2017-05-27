@@ -25,8 +25,26 @@ class Automatic_Bid(unittest.TestCase):
         global isRealName
         isRealName = u''
 
-    def logInCNAiDai(self):
+    def autoBidTest(self):
+        print(u'---->: 开始自动投标自动化测试')
+        if self.logInCNAiDai() == u'success':
+            if self.check_user_info_authentication_state():
+                autoState = self.checkAutoState()
+                if autoState == u'open':
+                    self.close_Automatic_Bid()
+                    self.open_Automatic_Bid()
+                    self.modify_Automatic_Bid()
+                elif autoState == u'close':
+                    self.open_Automatic_Bid()
+                    self.modify_Automatic_Bid()
+                    self.close_Automatic_Bid()
+                elif autoState == u'unknown':
+                    print(u'---->: 无法获取用户是否开启自动投标')
+
+    def logInCNAiDai(s):
         browser.get(u'http://www.cnaidai.com/webpc/index.html')
+        time.sleep(2)
+        print(u'---->: 打开老平台登录网址')
         time.sleep(2)
         browser.find_element_by_xpath(u'/html/body/div[11]/div').click()
         time.sleep(2)
@@ -37,95 +55,72 @@ class Automatic_Bid(unittest.TestCase):
 
         # 开始输入用户名和密码以及验证码
         print(u'---->: 开始输入用户信息进行登录……')
+        time.sleep(1)
         usernameLabel = browser.find_element_by_name(u'username')
         usernameLabel.clear()
         usernameLabel.send_keys(Keys.F11, u'wz001')
         print(u'---->: 输入用户名……')
+        time.sleep(1)
         passwordLabel = browser.find_element_by_name(u'password')
         passwordLabel.clear()
         passwordLabel.send_keys(u'a1111111')
         print(u'---->: 输入密码……')
+        time.sleep(1)
         valicodeLabel = browser.find_element_by_name(u'valicode')
         valicodeLabel.clear()
         valicodeLabel.send_keys(u'1111')
+        time.sleep(1)
         print(u'---->: 输入验证码……')
         time.sleep(1)
         browser.find_element_by_id(u'login_submit').click()
+        time.sleep(1)
+        # if browser.find_element_by_class_name(u'login_msg'):
+        #     print(u'\n##################\n\n---->: 系统异常，请稍后使用……\n\n##################')
+        #     return
         print(u'---->: 开始登录老平台……')
         time.sleep(5)
         browser.refresh()
-        time.sleep(1)
-        self.check_user_info_authentication_state()
-        time.sleep(1)
-        # global autoState
-        # autoState = self.checkAutoState()
-        # print(autoState)
+        return u'success'
 
     def check_user_state(self):
         print(u'---->: 开始验证用户状态……')
 
-    def check_user_info_authentication_state(self):
+    def check_user_info_authentication_state(s):
         print(u'---->: 开始验证用户认证状态……')
-        session = requests.session()
-        loginURl = u'http://a.cnaidai.com/webjr/uc/indexCfg/account/userInfo.cgi?'
-        uTime = int(time.mktime(datetime.datetime.now().timetuple()) * 1000)
-        loginData = {u'_': uTime}
-        userInfo = session.post(loginURl, data=loginData)
-        print(userInfo)
-        dic_json = json.dumps(userInfo.json(), sort_keys=True, indent=10, ensure_ascii=False)
-        dicInfo = json.loads(dic_json)
-        print (u'---->: Response : ', dicInfo)
-        if dicInfo[u'message'] != u'请先登录':
-            userInfo_detail = int(dicInfo[u'detailuser'])
-            print(u'---->: 用户详细信息：', userInfo_detail)
-            isPhoneAuth = userInfo_detail[u'phoneStatus']
-            if isPhoneAuth == u'1':
-                print(u'已验证手机号码')
+        time.sleep(2)
+        if browser.find_element_by_class_name(u'credit_pic_card_1'):
+            auth_code_P = u'1'
+            if browser.find_element_by_class_name(u'credit_pic_phone_1'):
+                auth_code_N = u'1'
+                print(u'---->: 用户全部认证成功')
+                return (u'AllAuth')
             else:
-                print(u'未验证手机号码')
-            isRealName = userInfo_detail[u'realStatus']
-            if isRealName == u'1':
-                print(u'已实名认证')
-            else:
-                print(u'未实名认证')
-            isOpenAutoBid = dicInfo[u'openAutoTender']
-            if isOpenAutoBid == u'1':
-                print(u'---->: 已开启自动投标')
-            else:
-                print(u'---->: 未开启自动投标')
+                print(u'---->: 已实名认证，未手机认证')
+                return (u'NameAuth')
         else:
-            print(u'---->: 登录失败，请先登录')
-        global auth_code
-        #auth_code(phone,realName,bankCard)
-        auth_code = u'000'
-
+            if browser.find_element_by_class_name(u'credit_pic_phone_1'):
+                auth_code_N = u'1'
+                print(u'---->: 未实名认证，已手机认证')
+                return (u'PhoneAuth')
+            else:
+                print(u'---->: 没有进行手机认证')
+                return (u'NoneAuth')
+        time.sleep(2)
 
     def checkAutoState(autoState_check):
-        print ('---->: 开始检查自动投标状态……')
+        print (u'---->: 开始检查自动投标状态……')
         time.sleep(5)
-        autoBtnText = browser.find_element_by_id('openAutoTender').text
+        autoBtnText = browser.find_element_by_id(u'openAutoTender').text
         print autoBtnText
-        if autoBtnText == '已开启 >':
-            print('---->: 自动投标已开启')
-            autoState_check = '1'
-            # print('---->: Start to modify Automatic_Bid')
-            # browser.find_element_by_id('openAutoTender').click()
-        elif autoBtnText == '未开启 >':
-            print('---->: 自动投标未开启')
-            autoState_check = '0'
-            # print('---->: start to open Automatic_Bid')
-            # browser.find_element_by_id('openAutoTender').click()
-            # time.sleep(2)
-            # self.open_Automatic_Bid()
-            # time.sleep(2)
-            # print('---->: Start to modify Automatic_Bid')
-            # self.modify_Automatic_Bid()
-            # time.sleep(2)
-            # self.close_Automatic_Bid()
-            # time.sleep(2)
+        if autoBtnText == u'已开启 >':
+            print(u'---->: 自动投标已开启')
+            autoState_check = u'open'
+        elif autoBtnText == u'未开启 >':
+            print(u'---->: 自动投标未开启')
+            autoState_check = u'close'
         else:
-            print('---->: 不能获取是否开启自动投标')
-            autoState_check = '5'
+            print(u'---->: 不能获取是否开启自动投标')
+            autoState_check = u'unknown'
         print(autoState_check)
         return autoState_check
 
@@ -232,9 +227,9 @@ class Automatic_Bid(unittest.TestCase):
         browser.find_element_by_class_name(u'open1').click()
         time.sleep(1)
         browser.find_element_by_id(u'payPassWord').send_keys(u'111111')
-        time.sleep(1)
+        time.sleep(2)
         browser.find_element_by_xpath(u'/html/body/div[6]/div[2]/a[2]').click()
-        time.sleep(1)
+        time.sleep(2)
         browser.switch_to_alert().accept()
         time.sleep(2)
 
@@ -247,7 +242,7 @@ class Automatic_Bid(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
-    suite.addTest(Automatic_Bid(u'logInCNAiDai'))
+    suite.addTest(Automatic_Bid(u'autoBidTest'))
 
     runner = unittest.TextTestRunner()
     runner.run(suite)
