@@ -30,6 +30,9 @@ class Automatic_Bid(unittest.TestCase):
         if self.logInCNAiDai() == u'success':
             if self.check_user_info_authentication_state():
                 autoState = self.checkAutoState()
+                time.sleep(2)
+                browser.find_element_by_id('openAutoTender').click()
+                time.sleep(1)
                 if autoState == u'open':
                     self.close_Automatic_Bid()
                     self.open_Automatic_Bid()
@@ -111,7 +114,6 @@ class Automatic_Bid(unittest.TestCase):
         print (u'---->: 开始检查自动投标状态……')
         time.sleep(5)
         autoBtnText = browser.find_element_by_id(u'openAutoTender').text
-        print autoBtnText
         if autoBtnText == u'已开启 >':
             print(u'---->: 自动投标已开启')
             autoState_check = u'open'
@@ -121,21 +123,21 @@ class Automatic_Bid(unittest.TestCase):
         else:
             print(u'---->: 不能获取是否开启自动投标')
             autoState_check = u'unknown'
-        print(autoState_check)
         return autoState_check
 
     def open_Automatic_Bid(self):
-        print('---->: 点击switch开关')
+        print('---->: 开始开启自动投标\n---->: 点击switch开关(open)')
         browser.refresh()
+        time.sleep(2)
+        # browser.find_element_by_id('openAutoTender').click()
         time.sleep(1)
         browser.find_element_by_class_name('close1').click()
         time.sleep(1)
         browser.find_element_by_id('payPassWord').send_keys('111111')
         time.sleep(1)
         browser.find_element_by_xpath('/html/body/div[6]/div[2]/a[2]').click()
-        time.sleep(1)
-        browser.switch_to_alert().accept()
         time.sleep(2)
+        print(u'开启-自动投标-已结束')
 
     def modify_Automatic_Bid(self):
         browser.refresh()
@@ -161,36 +163,60 @@ class Automatic_Bid(unittest.TestCase):
         for i in range(0, 5):
             dateIndex = random.randint(1, 5)
             print (u'dateIndex: ', dateIndex)
+            one_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(1)')
+            three_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(2)')
+            six_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(3)')
+            twelve_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(4)')
+            eighteen_month = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(5)')
+
             if dateIndex == 1:
-                browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(1)').click()
+                one_month.click()
                 time.sleep(1)
             elif dateIndex == 2:
-                browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(2)').click()
+                three_month.click()
                 time.sleep(1)
             elif dateIndex == 3:
-                browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(3)').click()
+                six_month.click()
                 time.sleep(1)
             elif dateIndex == 4:
-                browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(4)').click()
+                twelve_month.click()
                 time.sleep(1)
             else:
-                browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(5)').click()
+                eighteen_month.click()
                 time.sleep(1)
-        minAmount = random.randint(1, 10000) * 100
-        maxAmount = random.randint(1, 10000) * 100
-        while (minAmount > maxAmount):
-            maxAmount = random.randint(1, 10000) * 100
-        print(u'---->: 最小金额是: ', minAmount, u'    最大金额是: ', maxAmount)
+            if one_month.is_selected() or three_month.is_selected() or six_month.is_selected() or twelve_month.is_selected() or eighteen_month.is_selected():
+                print(u'someOne is selected')
+            else:
+                six_month.click()
+                time.sleep(1)
+                twelve_month.click()
+                time.sleep(1)
+        # minAmount = (long)random.randint(1, 10000) * 100
+        # maxAmount = (long)random.randint(1, 10000) * 100
+
+        print '#########################################################################'
+        total = 10000
+        li = [i for i in range(total)]
+        res = []
+        for i in range(2):
+            t = random.randint(i, total - 1)
+            res.append(li[t])
+            li[t], li[i] = li[i], li[t]
+        print res, res[0], res[1]
+        print '###########################################################################'
+        # while (minAmount > maxAmount):
+        #     maxAmount = (long)random.randint(1, 10000) * 100
+        # print(u'---->: 最小金额是: ', minAmount, u'    最大金额是: ', maxAmount)
         time.sleep(3)
         minAmount = browser.find_element_by_id(u'minimumAmount')
         minAmount.send_keys(Keys.LEFT_CONTROL, u'a')
         minAmount.send_keys(Keys.DELETE)
-        minAmount.send_keys(minAmount)
+        minAmount.send_keys(res[0]*100)
         time.sleep(2)
         maxAmount = browser.find_element_by_id(u'maximumAmount')
-        # minAmount.send_keys(Keys.LEFT_CONTROL, 'a')
-        # minAmount.send_keys(Keys.DELETE)
-        # maxAmount.send_keys(int(maxAmount * 100))
+        maxAmount.send_keys(Keys.LEFT_CONTROL, 'a')
+        maxAmount.send_keys(Keys.DELETE)
+        maxAmount.send_keys(res[1]*100)
         time.sleep(2)
 
         discount_ticket = browser.find_element_by_css_selector(u'#main > div > div.user_right > div.m-set > div:nth-child(5) > div.c > div > label:nth-child(1)')
@@ -218,11 +244,12 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_class_name(u'btn-ensure').click()
         time.sleep(1)
-        browser.switch_to_alert().accept()
+        print(u'修改-自动投标-结束')
 
     def close_Automatic_Bid(self):
-        print(u'---->: 开始关闭自动投标\n---->: 点击switch按钮')
-        browser.find_element_by_id(u'openAutoTender').click()
+        print(u'---->: 开始关闭自动投标\n---->: 点击switch按钮(close)')
+        time.sleep(2)
+        # browser.find_element_by_id('openAutoTender').click()
         time.sleep(1)
         browser.find_element_by_class_name(u'open1').click()
         time.sleep(1)
@@ -230,8 +257,7 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_xpath(u'/html/body/div[6]/div[2]/a[2]').click()
         time.sleep(2)
-        browser.switch_to_alert().accept()
-        time.sleep(2)
+        print(u'关闭-自动投标-结束')
 
     def get_ScreenShot(self):
         now = time.strftime(u'%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
