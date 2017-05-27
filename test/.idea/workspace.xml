@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_cnaidaiLogIn_Automatic_Bid_checkAutoState.coverage" NAME="Unittests for cnaidaiLogIn.Automatic_Bid.checkAutoState Coverage Results" MODIFIED="1495761317956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$logInWithCookie.coverage" NAME="logInWithCookie Coverage Results" MODIFIED="1495516692454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$timeExchange.coverage" NAME="timeExchange Coverage Results" MODIFIED="1495853570778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_old Coverage Results" MODIFIED="1495874917319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_old Coverage Results" MODIFIED="1495879538360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_profile_modifiedPhoneNum_setUp.coverage" NAME="Unittests for profile.modifiedPhoneNum.setUp Coverage Results" MODIFIED="1495502550368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -41,17 +41,19 @@
       <file leaf-file-name="cnaidai_AutoBid_old.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="143">
+              <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
               <folding>
-                <element signature="e#44#74#0" expanded="true" />
-                <element signature="e#1652#3130#0" expanded="false" />
-                <element signature="e#3172#3199#0" expanded="false" />
-                <element signature="e#3258#4021#0" expanded="false" />
-                <element signature="e#4072#4550#0" expanded="false" />
-                <element signature="e#5042#9538#0" expanded="false" />
-                <element signature="e#9583#10049#0" expanded="false" />
-                <element signature="e#10089#10355#0" expanded="false" />
+                <element signature="e#62#92#0" expanded="true" />
+                <element signature="e#360#826#0" expanded="false" />
+                <element signature="e#863#1773#0" expanded="false" />
+                <element signature="e#1012#1773#0" expanded="false" />
+                <element signature="e#1808#3246#0" expanded="false" />
+                <element signature="e#3288#3314#0" expanded="false" />
+                <element signature="e#3373#4136#0" expanded="false" />
+                <element signature="e#4187#4655#0" expanded="false" />
+                <element signature="e#4699#5168#0" expanded="false" />
+                <element signature="e#10266#10532#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,6 +124,7 @@
       <find>browser</find>
       <find>self.browser</find>
       <find>&quot;</find>
+      <find>u</find>
     </findStrings>
     <replaceStrings>
       <replace>self.browser</replace>
@@ -174,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,6 +191,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -544,7 +547,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15830946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16045845" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35666218" sideWeight="0.5057307" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -918,17 +921,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="143">
+          <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
           <folding>
-            <element signature="e#44#74#0" expanded="true" />
-            <element signature="e#1652#3130#0" expanded="false" />
-            <element signature="e#3172#3199#0" expanded="false" />
-            <element signature="e#3258#4021#0" expanded="false" />
-            <element signature="e#4072#4550#0" expanded="false" />
-            <element signature="e#5042#9538#0" expanded="false" />
-            <element signature="e#9583#10049#0" expanded="false" />
-            <element signature="e#10089#10355#0" expanded="false" />
+            <element signature="e#62#92#0" expanded="true" />
+            <element signature="e#360#826#0" expanded="false" />
+            <element signature="e#863#1773#0" expanded="false" />
+            <element signature="e#1012#1773#0" expanded="false" />
+            <element signature="e#1808#3246#0" expanded="false" />
+            <element signature="e#3288#3314#0" expanded="false" />
+            <element signature="e#3373#4136#0" expanded="false" />
+            <element signature="e#4187#4655#0" expanded="false" />
+            <element signature="e#4699#5168#0" expanded="false" />
+            <element signature="e#10266#10532#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# encoding: utf-8
 __author__ = 'pkf'
 
 from selenium import webdriver
@@ -38,56 +39,59 @@ class Automatic_Bid(unittest.TestCase):
                     self.close_Automatic_Bid()
                     self.open_Automatic_Bid()
                     self.modify_Automatic_Bid()
+                    time.sleep(3)
+                    browser.quit()
                 elif autoState == 'close':
                     self.open_Automatic_Bid()
                     self.modify_Automatic_Bid()
                     self.close_Automatic_Bid()
+                    time.sleep(3)
+                    browser.quit()
                 elif autoState == 'unknown':
                     print('---->: 无法获取用户是否开启自动投标')
 
     def logInCNAiDai(s):
-        browser.get(u'http://www.cnaidai.com/webpc/index.html')
+        browser.get('http://www.cnaidai.com/webpc/index.html')
         time.sleep(2)
-        print(u'---->: 打开老平台登录网址')
+        print('---->: 打开老平台登录网址')
         time.sleep(2)
-        browser.find_element_by_xpath(u'/html/body/div[11]/div').click()
+        browser.find_element_by_xpath('/html/body/div[11]/div').click()
         time.sleep(2)
-        browser.find_element_by_xpath(u'/html/body/div[2]/div/ul/li[4]/a').click()
-        print (u'---->: 关闭广告宣传弹窗\n---->: 进入老版爱贷登录页……')
+        browser.find_element_by_xpath('/html/body/div[2]/div/ul/li[4]/a').click()
+        print ('---->: 关闭广告宣传弹窗\n---->: 进入老版爱贷登录页……')
         # stepNum += 1
         time.sleep(1)
 
         # 开始输入用户名和密码以及验证码
-        print(u'---->: 开始输入用户信息进行登录……')
+        print('---->: 开始输入用户信息进行登录……')
         time.sleep(1)
-        usernameLabel = browser.find_element_by_name(u'username')
+        usernameLabel = browser.find_element_by_name('username')
         usernameLabel.clear()
-        usernameLabel.send_keys(Keys.F11, u'wz001')
-        print(u'---->: 输入用户名……')
+        usernameLabel.send_keys(Keys.F11, 'wz001')
+        print('---->: 输入用户名……')
         time.sleep(1)
-        passwordLabel = browser.find_element_by_name(u'password')
+        passwordLabel = browser.find_element_by_name('password')
         passwordLabel.clear()
-        passwordLabel.send_keys(u'a1111111')
-        print(u'---->: 输入密码……')
+        passwordLabel.send_keys('a1111111')
+        print('---->: 输入密码……')
         time.sleep(1)
-        valicodeLabel = browser.find_element_by_name(u'valicode')
+        valicodeLabel = browser.find_element_by_name('valicode')
         valicodeLabel.clear()
-        valicodeLabel.send_keys(u'1111')
+        valicodeLabel.send_keys('1111')
+        print('---->: 输入验证码……')
         time.sleep(1)
-        print(u'---->: 输入验证码……')
-        time.sleep(1)
-        browser.find_element_by_id(u'login_submit').click()
+        browser.find_element_by_id('login_submit').click()
         time.sleep(1)
         # if browser.find_element_by_class_name(u'login_msg'):
         #     print(u'\n##################\n\n---->: 系统异常，请稍后使用……\n\n##################')
         #     return
-        print(u'---->: 开始登录老平台……')
+        print('---->: 开始登录老平台……')
         time.sleep(5)
         browser.refresh()
-        return u'success'
+        return 'success'
 
     def check_user_state(self):
-        print(u'---->: 开始验证用户状态……')
+        print('---->: 开始验证用户状态……')
 
     def check_user_info_authentication_state(s):
         print(u'---->: 开始验证用户认证状态……')
@@ -112,18 +116,18 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(2)
 
     def checkAutoState(autoState_check):
-        print (u'---->: 开始检查自动投标状态……')
+        print ('---->: 开始检查自动投标状态……')
         time.sleep(5)
-        autoBtnText = browser.find_element_by_id(u'openAutoTender').text
-        if autoBtnText == u'已开启 >':
-            print(u'---->: 自动投标已开启')
-            autoState_check = u'open'
-        elif autoBtnText == u'未开启 >':
-            print(u'---->: 自动投标未开启')
-            autoState_check = u'close'
+        autoBtnText = browser.find_element_by_id('openAutoTender').text
+        if autoBtnText == '已开启 >':
+            print('---->: 自动投标已开启')
+            autoState_check = 'open'
+        elif autoBtnText == '未开启 >':
+            print('---->: 自动投标未开启')
+            autoState_check = 'close'
         else:
-            print(u'---->: 不能获取是否开启自动投标')
-            autoState_check = u'unknown'
+            print('---->: 不能获取是否开启自动投标')
+            autoState_check = 'unknown'
         return autoState_check
 
     def open_Automatic_Bid(self):
@@ -132,11 +136,13 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(2)
         browser.find_element_by_class_name('close1').click()
         time.sleep(1)
+        print('---->: 输入交易密码')
         browser.find_element_by_id('payPassWord').send_keys('111111')
         time.sleep(1)
+        print('---->: 点击确认')
         browser.find_element_by_xpath('/html/body/div[6]/div[2]/a[2]').click()
         time.sleep(2)
-        print('开启-自动投标-已结束')
+        print('---->: 开启-自动投标-已结束')
 
     def modify_Automatic_Bid(self):
         browser.refresh()
@@ -149,17 +155,20 @@ class Automatic_Bid(unittest.TestCase):
         selMax = browser.find_element_by_id('maximumProfit')
         numMin = random.randint(1, 24)
         numMax = random.randint(1, 24)
-        while (numMin > numMax) :
-            numMax = random.randint(1, 24)
-        print '---->: 最小是: ', numMin, '    最大是: ', numMax
+        if numMin > numMax:
+            numMin, numMax = numMax, numMin
+        print('---->: min:', numMin, '---max:', numMax)
         time.sleep(1)
+        print('---->: 选取最小值')
         Select(selMin).select_by_index(numMin - 1)
         time.sleep(1)
+        print('---->: 选取最大值')
         Select(selMax).select_by_index(numMax - 1)
         time.sleep(1)
+
         for i in range(0, 5):
             dateIndex = random.randint(1, 5)
-            print 'dateIndex: ', dateIndex
+            print '---->: 选取第 ', dateIndex, '个日期选框 '
             one_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(1)')
             three_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(2)')
             six_month = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(3) > div.c > p > span:nth-child(3)')
@@ -182,29 +191,30 @@ class Automatic_Bid(unittest.TestCase):
                 eighteen_month.click()
                 time.sleep(1)
             if one_month.is_selected() or three_month.is_selected() or six_month.is_selected() or twelve_month.is_selected() or eighteen_month.is_selected():
-                print('someOne is selected')
+                print('---->: 有至少一个被选中')
             else:
+                print('---->: 选取第 3 个日期选框')
                 six_month.click()
                 time.sleep(1)
+                print('---->: 选取第 4 个日期选框')
                 twelve_month.click()
                 time.sleep(1)
-        # print('#########################################################################')
+
         total = 10000
         li = [i for i in range(total)]
         res = random.sample(li, 2)
-        # print('###########################################################################')
-
         if (res[0] > res[1]):
             res[0], res[1] = res[1], res[0]
         minAmount = res[0]
         maxAmount = res[1]
-        print('---->: 最小金额是: ', minAmount, '    最大金额是: ', maxAmount)
         time.sleep(3)
+        print('---->: 输入单笔投资金额最小值')
         minAmount = browser.find_element_by_id('minimumAmount')
         minAmount.send_keys(Keys.LEFT_CONTROL, 'a')
         minAmount.send_keys(Keys.DELETE)
         minAmount.send_keys(res[0]*100)
         time.sleep(2)
+        print('---->: 输入单笔投资金额最大值')
         maxAmount = browser.find_element_by_id('maximumAmount')
         maxAmount.send_keys(Keys.LEFT_CONTROL, 'a')
         maxAmount.send_keys(Keys.DELETE)
@@ -213,17 +223,18 @@ class Automatic_Bid(unittest.TestCase):
 
         discount_ticket = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(5) > div.c > div > label:nth-child(1)')
         interest_add_ticket = browser.find_element_by_css_selector('#main > div > div.user_right > div.m-set > div:nth-child(5) > div.c > div > label:nth-child(2)')
-
         ticketIndex = random.randint(1, 3)
-        print('---->: 优惠券选取：', ticketIndex, '<1：加息券；2：折扣券：3：全部选择>')
         time.sleep(3)
         if ticketIndex == 1:
+            print('---->: 点击-加息券')
             discount_ticket.click()
             time.sleep(2)
         elif ticketIndex == 2:
+            print('---->: 点击-折扣券')
             interest_add_ticket.click()
             time.sleep(2)
         else:
+            print('---->: 点击-加息券和折扣券')
             discount_ticket.click()
             time.sleep(2)
             interest_add_ticket.click()
@@ -239,17 +250,17 @@ class Automatic_Bid(unittest.TestCase):
         print('---->: 修改-自动投标-结束')
 
     def close_Automatic_Bid(self):
-        print(u'---->: 开始关闭自动投标\n---->: 点击switch按钮(close)')
+        print('---->: 开始关闭自动投标\n---->: 点击switch按钮(close)')
         time.sleep(2)
         # browser.find_element_by_id('openAutoTender').click()
         time.sleep(1)
-        browser.find_element_by_class_name(u'open1').click()
+        browser.find_element_by_class_name('open1').click()
         time.sleep(1)
-        browser.find_element_by_id(u'payPassWord').send_keys(u'111111')
+        browser.find_element_by_id('payPassWord').send_keys(u'111111')
         time.sleep(2)
-        browser.find_element_by_xpath(u'/html/body/div[6]/div[2]/a[2]').click()
+        browser.find_element_by_xpath('/html/body/div[6]/div[2]/a[2]').click()
         time.sleep(2)
-        print(u'关闭-自动投标-结束')
+        print('---->: 关闭-自动投标-结束')
 
     def get_ScreenShot(self):
         now = time.strftime(u'%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
