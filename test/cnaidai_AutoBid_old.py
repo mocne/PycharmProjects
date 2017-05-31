@@ -26,10 +26,13 @@ class Automatic_Bid(unittest.TestCase):
         isRealName = ''
         global isAutoStateOpen
         isAutoStateOpen = ''
+        global f
+        f = open('./Logs/' + str(time.strftime('%Y%m%d')) + '.txt', 'a+')
 
     def autoBidTest(self):
         print('---->: 开始自动投标自动化测试')
-        if self.logInCNAiDai() == 'success':
+        msg = self.logInCNAiDai()
+        if msg == 'success':
             if self.check_user_info_authentication_state():
                 autoState = self.checkAutoState()
                 time.sleep(2)
@@ -49,6 +52,9 @@ class Automatic_Bid(unittest.TestCase):
                     browser.quit()
                 elif autoState == 'unknown':
                     print('---->: 无法获取用户是否开启自动投标')
+        else:
+            print >> f, "%s -->: %s" % (str(time.strftime('%Y_%m_%d %H:%M:%S')), msg)
+            print(msg)
 
     def logInCNAiDai(s):
         browser.get('http://www.cnaidai.com/webpc/index.html')
@@ -82,9 +88,10 @@ class Automatic_Bid(unittest.TestCase):
         time.sleep(1)
         browser.find_element_by_id('login_submit').click()
         time.sleep(1)
-        # if browser.find_element_by_class_name(u'login_msg'):
-        #     print(u'\n##################\n\n---->: 系统异常，请稍后使用……\n\n##################')
-        #     return
+        msgTxt = browser.find_element_by_id('login_msg').text
+        if msgTxt != '':
+            logIn_Msg = browser.find_element_by_id('login_msg').text
+            return logIn_Msg
         print('---->: 开始登录老平台……')
         time.sleep(5)
         browser.refresh()
@@ -275,3 +282,4 @@ if __name__ == '__main__':
 
     runner = unittest.TextTestRunner()
     runner.run(suite)
+    f.close()

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py" line="54" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4db78151-d6fc-4653-a6d5-267ff1942618" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +23,7 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_cnaidaiLogIn_Automatic_Bid_checkAutoState.coverage" NAME="Unittests for cnaidaiLogIn.Automatic_Bid.checkAutoState Coverage Results" MODIFIED="1495761317956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$logInWithCookie.coverage" NAME="logInWithCookie Coverage Results" MODIFIED="1495516692454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$timeExchange.coverage" NAME="timeExchange Coverage Results" MODIFIED="1495853570778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_old Coverage Results" MODIFIED="1495879538360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_old Coverage Results" MODIFIED="1496200540814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_profile_modifiedPhoneNum_setUp.coverage" NAME="Unittests for profile.modifiedPhoneNum.setUp Coverage Results" MODIFIED="1495502550368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -41,19 +44,18 @@
       <file leaf-file-name="cnaidai_AutoBid_old.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+            <state relative-caret-position="290">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="e#62#92#0" expanded="true" />
-                <element signature="e#360#826#0" expanded="false" />
-                <element signature="e#863#1773#0" expanded="false" />
-                <element signature="e#1012#1773#0" expanded="false" />
-                <element signature="e#1808#3246#0" expanded="false" />
-                <element signature="e#3288#3314#0" expanded="false" />
-                <element signature="e#3373#4136#0" expanded="false" />
-                <element signature="e#4187#4655#0" expanded="false" />
-                <element signature="e#4699#5168#0" expanded="false" />
-                <element signature="e#10266#10532#0" expanded="false" />
+                <element signature="e#360#917#0" expanded="false" />
+                <element signature="e#1057#1882#0" expanded="false" />
+                <element signature="e#3531#3557#0" expanded="false" />
+                <element signature="e#3616#4379#0" expanded="false" />
+                <element signature="e#4430#4898#0" expanded="false" />
+                <element signature="e#4942#5411#0" expanded="false" />
+                <element signature="e#10001#10469#0" expanded="false" />
+                <element signature="e#10509#10775#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -191,8 +193,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -547,17 +549,17 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16045845" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16260745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35666218" sideWeight="0.5057307" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35666218" sideWeight="0.508596" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35666218" sideWeight="0.49426934" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35666218" sideWeight="0.491404" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -576,7 +578,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -921,19 +923,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+        <state relative-caret-position="290">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="e#62#92#0" expanded="true" />
-            <element signature="e#360#826#0" expanded="false" />
-            <element signature="e#863#1773#0" expanded="false" />
-            <element signature="e#1012#1773#0" expanded="false" />
-            <element signature="e#1808#3246#0" expanded="false" />
-            <element signature="e#3288#3314#0" expanded="false" />
-            <element signature="e#3373#4136#0" expanded="false" />
-            <element signature="e#4187#4655#0" expanded="false" />
-            <element signature="e#4699#5168#0" expanded="false" />
-            <element signature="e#10266#10532#0" expanded="false" />
+            <element signature="e#360#917#0" expanded="false" />
+            <element signature="e#1057#1882#0" expanded="false" />
+            <element signature="e#3531#3557#0" expanded="false" />
+            <element signature="e#3616#4379#0" expanded="false" />
+            <element signature="e#4430#4898#0" expanded="false" />
+            <element signature="e#4942#5411#0" expanded="false" />
+            <element signature="e#10001#10469#0" expanded="false" />
+            <element signature="e#10509#10775#0" expanded="false" />
           </folding>
         </state>
       </provider>
