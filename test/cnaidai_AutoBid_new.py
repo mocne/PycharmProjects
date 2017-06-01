@@ -26,7 +26,7 @@ class Automatic_Bid(unittest.TestCase):
         print("---->: Start to input userMessage")
         usernameLabel = browser.find_element_by_name("username")
         usernameLabel.clear()
-        usernameLabel.send_keys("13700120012")
+        usernameLabel.send_keys("wz020")
         print("---->: input username")
         time.sleep(1)
         passwordLabel = browser.find_element_by_name("password")
@@ -42,8 +42,8 @@ class Automatic_Bid(unittest.TestCase):
         browser.find_element_by_id("login_submit").click()
         print ("---->: Log_into_Cnaidai")
         time.sleep(3)
-        self.checkAutoState()
-        browser.quit()
+        # self.checkAutoState()
+        # browser.quit()
 
     def checkAutoState(self):
         print ("---->: Start_checkAutoBidState")

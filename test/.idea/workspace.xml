@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py" line="54" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="4db78151-d6fc-4653-a6d5-267ff1942618" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +14,16 @@
     <SUITE FILE_PATH="coverage/test$Unittests_for_old_cnaidai_autoBid_Automatic_Bid_setUp.coverage" NAME="Unittests for old_cnaidai_autoBid.Automatic_Bid.setUp Coverage Results" MODIFIED="1495768976346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$baiduLogIn.coverage" NAME="baiduLogIn Coverage Results" MODIFIED="1495761272290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$lanchView.coverage" NAME="lanchView Coverage Results" MODIFIED="1495502561663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_new.coverage" NAME="cnaidai_AutoBid_new Coverage Results" MODIFIED="1496221705504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$Unittests_in_cnaidai_bank_depository_py.coverage" NAME="cnaidai_bank_depository Coverage Results" MODIFIED="1496221789274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_cnaidaiLogIn_Automatic_Bid_checkAutoState.coverage" NAME="Unittests for cnaidaiLogIn.Automatic_Bid.checkAutoState Coverage Results" MODIFIED="1495761317956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$Unittests_for_profile_modifiedPhoneNum_setUp.coverage" NAME="Unittests for profile.modifiedPhoneNum.setUp Coverage Results" MODIFIED="1495502550368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$Unittests_for_old_cnaidai_autoBid_Automatic_Bid_logInCnaidai.coverage" NAME="Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai Coverage Results" MODIFIED="1495769790873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$cnaidaiLogIn.coverage" NAME="cnaidaiLogIn Coverage Results" MODIFIED="1495761538476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1495439650294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_cnaidaiLogIn_Automatic_Bid_checkAutoState.coverage" NAME="Unittests for cnaidaiLogIn.Automatic_Bid.checkAutoState Coverage Results" MODIFIED="1495761317956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$logInWithCookie.coverage" NAME="logInWithCookie Coverage Results" MODIFIED="1495516692454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$timeExchange.coverage" NAME="timeExchange Coverage Results" MODIFIED="1495853570778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_old Coverage Results" MODIFIED="1496208267197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/test$Unittests_for_profile_modifiedPhoneNum_setUp.coverage" NAME="Unittests for profile.modifiedPhoneNum.setUp Coverage Results" MODIFIED="1495502550368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$cnaidai_AutoBid_old.coverage" NAME="cnaidai_AutoBid_new Coverage Results" MODIFIED="1496220479054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -40,75 +39,7 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cnaidai_AutoBid_old.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-              <folding>
-                <element signature="e#62#92#0" expanded="true" />
-                <element signature="e#8812#9595#0" expanded="false" />
-                <element signature="e#9636#11072#0" expanded="false" />
-                <element signature="e#11118#11973#0" expanded="false" />
-                <element signature="e#12012#13009#0" expanded="false" />
-                <element signature="e#13519#14448#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lanchView.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lanchView.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baiduLogIn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baiduLogIn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logInWithCookie.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logInWithCookie.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1562">
-              <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeExchange.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timeExchange.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,6 +82,9 @@
         <option value="$PROJECT_DIR$/lanchView.py" />
         <option value="$PROJECT_DIR$/timeExchange.py" />
         <option value="$PROJECT_DIR$/cnaidai_AutoBid_old.py" />
+        <option value="$PROJECT_DIR$/cnaidai_AutoBid_new.py" />
+        <option value="$PROJECT_DIR$/Logs/cnaidai_bank_depository.py" />
+        <option value="$PROJECT_DIR$/cnaidai_bank_depository.py" />
       </list>
     </option>
   </component>
@@ -195,14 +129,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cnaidai_AutoBid_new.py" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="test" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="test" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnaidai_AutoBid_old">
+  <component name="RunManager" selected="Python tests.cnaidai_bank_depository">
     <configuration default="false" name="cnaidaiLogIn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,22 +181,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests for cnaidai_AutoBid_new.Automatic_Bid.checkAutoState" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;cnaidai_AutoBid_new.Automatic_Bid.checkAutoState&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests for cnaidai_AutoBid_old.Automatic_Bid.setUp" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -306,6 +232,23 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="cnaidai_bank_depository" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/cnaidai_bank_depository.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -456,7 +399,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="cnaidai_AutoBid_old" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="cnaidai_AutoBid_new" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -469,27 +412,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnaidai_AutoBid_old.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnaidai_AutoBid_new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.cnaidai_AutoBid_old" />
+      <item index="0" class="java.lang.String" itemvalue="Python.cnaidai_AutoBid_new" />
       <item index="1" class="java.lang.String" itemvalue="Python.cnaidaiLogIn" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_new.Automatic_Bid.checkAutoState" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.setUp" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai" />
-      <item index="5" class="java.lang.String" itemvalue="Python.timeExchange" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.setUp" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai" />
+      <item index="4" class="java.lang.String" itemvalue="Python.timeExchange" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.cnaidai_bank_depository" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.timeExchange" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.setUp" />
-        <item index="3" class="java.lang.String" itemvalue="Python.cnaidaiLogIn" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_new.Automatic_Bid.checkAutoState" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.cnaidai_bank_depository" />
+        <item index="1" class="java.lang.String" itemvalue="Python.timeExchange" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for cnaidai_AutoBid_old.Automatic_Bid.setUp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.cnaidaiLogIn" />
       </list>
     </recent_temporary>
   </component>
@@ -507,18 +450,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_cnaidaiLogIn_Automatic_Bid_checkAutoState - 2017.05.26 at 09h 15m 30s.xml">
-      <configuration name="Unittests for cnaidaiLogIn.Automatic_Bid.checkAutoState" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_cnaidai_AutoBid_old_Automatic_Bid_logInCnaidai - 2017.05.26 at 11h 36m 31s.xml">
-      <configuration name="Unittests for cnaidai_AutoBid_old.Automatic_Bid.logInCnaidai" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_old_cnaidai_autoBid_Automatic_Bid_logInCnaidai - 2017.05.26 at 11h 25m 19s.xml">
-      <configuration name="Unittests for old_cnaidai_autoBid.Automatic_Bid.logInCnaidai" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_old_cnaidai_autoBid_Automatic_Bid_logInCnaidai - 2017.05.26 at 11h 26m 16s.xml">
-      <configuration name="Unittests for old_cnaidai_autoBid.Automatic_Bid.logInCnaidai" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_old_cnaidai_autoBid_Automatic_Bid_logInCnaidai - 2017.05.26 at 11h 26m 42s.xml">
       <configuration name="Unittests for old_cnaidai_autoBid.Automatic_Bid.logInCnaidai" configurationId="tests" />
     </history-entry>
@@ -537,6 +468,18 @@
     <history-entry file="Unittests_for_profile_modifiedPhoneNum_setUp - 2017.05.23 at 09h 22m 30s.xml">
       <configuration name="Unittests for profile.modifiedPhoneNum.setUp" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_cnaidai_bank_depository_py - 2017.05.31 at 17h 08m 34s.xml">
+      <configuration name="Unittests in cnaidai_bank_depository.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="cnaidai_bank_depository - 2017.05.31 at 17h 09m 28s.xml">
+      <configuration name="cnaidai_bank_depository" configurationId="tests" />
+    </history-entry>
+    <history-entry file="cnaidai_bank_depository - 2017.05.31 at 17h 09m 33s.xml">
+      <configuration name="cnaidai_bank_depository" configurationId="tests" />
+    </history-entry>
+    <history-entry file="cnaidai_bank_depository - 2017.05.31 at 17h 09m 49s.xml">
+      <configuration name="cnaidai_bank_depository" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,9 +492,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16260745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17550144" sideWeight="0.49528936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35666218" sideWeight="0.508596" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -560,7 +502,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35397038" sideWeight="0.491404" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17335244" sideWeight="0.5047106" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -585,20 +527,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lohinWithRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logInWithCookie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requests1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -842,18 +770,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="230" column="8" lean-forward="false" selection-start-line="230" selection-start-column="8" selection-end-line="230" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Python27/Lib/site-packages/selenium-3.4.1-py2.7.egg/selenium/webdriver/remote/webelement.py" />
-    <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IE.py" />
     <entry file="file://$PROJECT_DIR$/logIn.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -887,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
           <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,15 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baiduLogIn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,25 +828,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduLogIn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/cnaidai_bank_depository.py" />
+    <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cnaidai_AutoBid_old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding>
-            <element signature="e#62#92#0" expanded="true" />
-            <element signature="e#8812#9595#0" expanded="false" />
-            <element signature="e#9636#11072#0" expanded="false" />
-            <element signature="e#11118#11973#0" expanded="false" />
-            <element signature="e#12012#13009#0" expanded="false" />
-            <element signature="e#13519#14448#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cnaidai_bank_depository.py" />
   </component>
   <component name="masterDetails">
     <states>
