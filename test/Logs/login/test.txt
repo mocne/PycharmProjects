@@ -1,0 +1,22 @@
+2017_06_07 16:37:40 -->: asdfghjkl
+2017_06_07 16:37:50 -->: asdfghjkl
+2017_06_07 16:37:51 -->: asdfghjkl
+2017_06_07 16:37:52 -->: asdfghjkl
+2017_06_07 16:37:53 -->: asdfghjkl
+2017_06_07 16:37:54 -->: asdfghjkl
+[2017_06_07 16:38:50] -->: asdfghjkl
+[2017_06_07 16:39:00] -->: asdfghjkl
+[2017_06_07 16:39:00] -->: asdfghjkl
+[2017_06_07 16:39:01] -->: asdfghjkl
+[2017_06_07 16:39:03] -->: asdfghjkl
+[2017_06_07 16:39:04] -->: asdfghjkl
+【2017_06_07 16:39:57】 -->: asdfghjkl
+【2017_06_07 16:40:07】 -->: asdfghjkl
+【2017_06_07 16:40:08】 -->: asdfghjkl
+【2017_06_07 16:40:09】 -->: asdfghjkl
+【2017_06_07 16:40:10】 -->: asdfghjkl
+【2017_06_07 16:40:11】 -->: asdfghjkl
+【2017_06_07 16:41:52】-->:logInCnaidai (__main__.Automatic_Bid)
+【2017_06_07 16:42:02】-->:logInCnaidai (__main__.Automatic_Bid)
+【2017_06_07 16:42:34】-->:logInCnaidai (__main__.Automatic_Bid)
+【2017_06_07 16:42:44】-->:logInCnaidai (__main__.Automatic_Bid)
