@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="jinrishuofa@localhost" uuid="86c89281-0e97-4da4-a349-5e83b1ca6307">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>mocne</user-name>
+    </data-source>
+  </component>
+</project>

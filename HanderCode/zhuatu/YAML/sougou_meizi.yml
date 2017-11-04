@@ -1,0 +1,12 @@
+search_meizi:
+  From: sougou
+  RequestURL: http://pic.sogou.com/pics
+  RequestMethod: GET
+  StatusCode: 200
+  Params:
+    query: 妹子
+    mode: 1
+    start: 48  # 最后一次的抓取数量
+    reqType: ajax
+    reqFrom: result
+    tn: 0

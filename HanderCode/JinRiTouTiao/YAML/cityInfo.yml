@@ -1,0 +1,8 @@
+cityInfo:
+  RequestUrl: http://www.toutiao.com/stream/widget/local_weather/city/
+  RequestMethod: GET
+  Paramaters:
+  Result:
+    StatusCode: 200
+    Message: success
+    Data: not null
